@@ -13,9 +13,11 @@
 
 - hosts: workstation
   become: yes
+  vars:
+    ansible_python_interpreter: /root/openstack-venv/bin/python
   roles:
-    - setup-workstation
-    - osp-setup
+   # - setup-workstation
+   # - osp-setup
 
 - import_playbook: site-install-isolated-node.yaml
 

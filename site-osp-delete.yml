@@ -1,4 +1,6 @@
 - hosts: workstation
   become: yes
+  vars:
+    ansible_python_interpreter: /root/openstack-venv/bin/python
   roles:
     - osp-instance-delete

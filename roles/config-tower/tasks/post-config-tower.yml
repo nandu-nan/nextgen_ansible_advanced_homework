@@ -1,4 +1,6 @@
 - name: Create Homework Assignment project
+  command: tower-cli project create --name "HWPROJECT" --description "My HW project " --organization "Default" --scm-type "git" --scm-url "{{github_repo}}"
+
 
 
 - name: Machine Credentail to connect to workstation using openstack.pub
